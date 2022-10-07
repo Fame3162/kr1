@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+nav.all {
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 100px;
+}
+h1#name {
+    border-bottom: 2px solid black;
+    display: table;
+}
+h1 {
+    color: rgb(202, 73, 202);
+}
+div.main_info {
+    display: table;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+p.par{
+    display: table;
+    color: green;
+    border-bottom: 2px solid black;
+}
+div.table {
+    margin-bottom: 100px;
+    font-weight: bold;
+    border: 2px solid black;
+    display: table;
+    padding: 15px;
+}
+dl {
+    font-weight: bold;
+    border: 2px solid black;
+    display: table;
+    padding: 15px;
+}
