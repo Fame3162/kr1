@@ -12,8 +12,8 @@ h1 {
     color: rgb(202, 73, 202);
 }
 div.main_info {
-    display: table;
-    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
     padding: 10px;
     margin-bottom: 100px;
 }
@@ -25,13 +25,99 @@ p.par{
 div.table {
     margin-bottom: 100px;
     font-weight: bold;
-    border: 2px solid black;
     display: table;
     padding: 15px;
 }
-dl {
+dl#contacts {
     font-weight: bold;
     border: 2px solid black;
+    margin: 70px;
+    border-radius: 20px;
     display: table;
     padding: 15px;
+}
+div#inf {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    margin-right: 100px;
+}
+div#inf1 {
+    border: 2px solid black;
+    padding-left: 20px;
+    border-radius: 40px;
+    background-color: rgb(240, 102, 102);
+}
+div#inf2 {
+    border: 2px solid black;
+    padding-left: 20px;
+    border-radius: 40px;
+    background-color: rgb(30, 156, 206);
+}
+div#tbl {
+    width: 500px;
+    margin-left: 30%;
+}
+td.table {
+    padding: 20px;
+    width: 1000px;
+    border: 2px solid black;
+}
+tr#tr1 {
+    background-color: rgb(106, 236, 67);
+}
+tr#tr2 {
+    background-color: rgb(111, 166, 238);
+}
+tr#tr3 {
+    background-color: rgb(255, 0, 0);
+}
+tr#tr4 {
+    background-color: blue;
+}
+div#con-dis {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    margin-left: 10%;
+}
+div#discription {
+    font-weight: bold;
+    border: 2px solid black;
+    margin: 70px;
+    border-radius: 20px;
+    display: table;
+    padding: 15px;
+}
+div#mn {
+    margin: 70px;
+}
+p.par {
+    margin: 20px;
+}
+.comment {
+    border-radius: 7px;
+}
+@media screen and (max-width: 425px) {
+    div.main_info{
+        flex-direction: column;
+    }
+    div#inf{
+        flex-direction: column;
+        
+    }
+    div#tbl{
+        margin-left: 0%;
+    }
+    div#con-dis{
+        margin-left: 0%;
+        flex-direction: column;
+    }
+    div#discription {
+        margin: 0%;
+    }
+    nav.all {
+        margin: 10px;
+    }
 }

@@ -7,55 +7,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
   <nav class="all">
-    <h1 id='tittle1'>ДЗ по проекту для себя</h1>
+    <h1 id='tittle1'>Контрольная работа 1</h1>
+    <h1 id='name'> Школьная справочная служба</h1>
     <div class='main_info'>
-      <h1 id='name'> Name project</h1>
-      <br>
-      <p class="par">Основная ифнормация по проекту</p>
-      <br>
-      <p class="par">Что надо было сделать</p>
-      <br>
-      <p class="par">Что было сделано</p>
+        <p class="par"><a href="#inf1"> Основная ифнормация по проекту</a></p>
+        <p class="par"><a href="#inf2"> Что надо было сделать</a></p>
+        <p class="par"><a href="#tbl"> Прогресс</a></p>
+        <p class="par"><a href="#contacts">Мои контакты</a></p>
+        <p class="par"><a href="#discription">Опрос по сайту</a></p>
     </div>
-    <div class='table'>
+    <div id="mn">
+      <h3>Основная информация по проекту</h3>
+      <p>Я спрашивал у учителей,какой сайт был бы практичен и полезен для массы людей. По большенству запросов я сделал вывод,что наилучший сайт - школьная справочная служба по типу государственного электронного дневника,который в большинстве случаев работает  корректно или не работает вообще. Т.к. эжд не работает,то учителя не имеют доступ к оценкам и посещаемости учеников,а также не могут задавать домашнюю работу => процесс обучения становится не продуктивным плюс много чего теряется/удаляется в самом эжд. Поэтому мой сайт будет востребован в школах,а может и в других учебных учереждениях.</p>
+    </div>
+    <div id="inf">
+      <div id="inf1">
+        <h3 >Что надо было сделать</h3>
+        <p id="inf1.1">Тут я распишу свои цели на эти 3 недели,которые указаны в таблице. Неделя 1 - основной целью моего проекта была востребованность среди масс,но сам придумать такой сайт я не смог, поэтому было принято спрашивать у других людей. В приоритете у меня блыи люди старше 18 лет, а в первую очередь учителя. Спрашивать я буду и у другтх взрослых. Неделя 2 - я изучить html и его функции. На третьей неделе нужно было изучить css и решил попробовать свои силы при помощи домашней работы. 
+        </p>
+      </div>
+      <div id="inf2">
+        <h3>Что было сделано</h3>
+        <p id="inf2.1">Тут я распишу свои цели на эти 3 недели,которые указаны в таблице. Неделя 1 - основной целью моего проекта была востребованность среди масс,но сам придумать такой сайт я не смог поэтому пошел спрашивать у других людей. В приоритете у меня блыи люди старше 18 лет, поэтому в первую очередь я пошел к учителям , и о них я узнал, что будет востребованно в школе. Спрашивал я и у другтх взрослых,но их идеи мне не понравились. Неделя 2 - я изучал html и его функции. На третьей неделе я изучал css и решил попробовать свои силы при помощи домашней работы.
+        </p>
+      </div>
+    </div>
+    <div class='table', id="tbl">
       <table>
         <thead>
-          <tr>
-            <td>Col 1</td>
-            <td>Col 2</td>
-            <td>Col 3</td>
+          <tr id="tr1">
+            <td class='table'>Недели</td>
+            <td class='table'>Цель</td>
+            <td class='table'>Выполнена да/нет</td>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Val 1</td>
-            <td>Val 2</td>
-            <td>Val 3</td>
+          <tr id="tr2">
+            <td class='table'> 1</td>
+            <td class='table'>Определится с темой проекта</td>
+            <td class='table'>да</td>
           </tr>
-          <tr>
-            <td>Val 1</td>
-            <td>Val 2</td>
-            <td>Val 3</td>
+          <tr id="tr3">
+            <td class='table'> 2</td>
+            <td class='table'>Изучить html</td>
+            <td class='table'>Да</td>
           </tr>
-          <tr>
-            <td>Val 1</td>
-            <td>Val 2</td>
-            <td>Val 3</td>
+          <tr id="tr4">
+            <td class='table'> 3</td>
+            <td class='table'>Изучить css и попробовать написать дз</td>
+            <td class='table'>Да</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div>
-      <dl id="contacts">
-        <dt>Контактная информация</dt>
-          <dd><a href="https://vk.com/gg2003", target="_blank">1.Мой вк</a></dd>
-          <dd><a href="youtube.com", target="_blank"> 2.Youtube</a></dd>
-         <dd><a href="twitter.com", target="_blank">3.Twitter</a></dd>
-        </dl>
+    <div id="con-dis">
+      <div id="discription">
+        <h3>Опрос</h3>
+        <p><b>Ваше имя:</b><br>
+          <input class="comment" type="text" size="40" placeholder="Ковалев Роман Вадимович">
+         </p>
+         <p><b>Сколько вам лет?</b><br>
+        <p><input class="comment" type="number" min="0" list="numbList"></p>
+         <p><b>Каким браузером в основном пользуетесь:</b><Br>
+          <input type="radio" name="browser" value="ie"> Internet Explorer<Br>
+          <input type="radio" name="browser" value="opera"> Opera<Br>
+          <input type="radio" name="browser" value="firefox"> Firefox<Br>
+         </p>
+         <p><b>Нравится ли вам этот сайт</b><Br>
+          <input type="radio" name="browser" value="ie"> Да<Br>
+          <input type="radio" name="browser" value="opera"> Нет<Br>
+          <input type="radio" name="browser" value="firefox"> Не могу определиться<Br>
+         </p>
+         <p>Комментарий<Br>
+          <textarea class="comment" name="comment" cols="40" rows="3"></textarea></p>
+          <button type="button" class="btn btn-outline-dark" style="margin-right: 20px;">Отправить</button>
+          <button type="button" class="btn btn-outline-danger">Очистить</button>
+        </form>
+      </div>
+      <div>
+        <dl id="contacts">
+          <dt>Контактная информация</dt>
+            <dd><a href="https://vk.com/gg2003", target="_blank">1.Мой вк</a></dd>
+            <dd><a href="youtube.com", target="_blank"> 2.Youtube</a></dd>
+           <dd><a href="twitter.com", target="_blank">3.Twitter</a></dd>
+          </dl>
+      </div>
     </div>
   </nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
